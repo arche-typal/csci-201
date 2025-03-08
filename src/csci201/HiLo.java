@@ -41,7 +41,6 @@ public class HiLo {
             	System.out.println("Congratulations! You guessed the random number " + randNum 
             			+ "!\nThere were " + numberOfGuesses + " attempt(s) before the correct number was guessed.");
             }
-            //System.out.println("While loop ended.");
             System.out.println("\nThanks for playing!\n\nWould you like to play again?"
             		+ "\nEnter -1 to fully quit and anything else to keep playing: ");
             guess = scanner.nextInt();
