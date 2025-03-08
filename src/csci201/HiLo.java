@@ -77,57 +77,6 @@ public class HiLo {
 
         System.out.println("Exited do loop.");
 
-
-//        while ((guess < 1 || guess > 100) && guess != sentinelVal) {
-//            System.out.println("Your guess is not within the range of 1-100. Please try again: ");
-//            guess = scanner.nextInt();
-//        }
-
-
-
-//        do {
-//            //Remove below line after testing
-//            System.out.println("Random number: " + randomNumb);
-//            System.out.println("To guess the random number I chose, enter a number between 1-100, or enter -1 to quit: ");
-//            guess = scanner.nextInt();
-//            while ((guess < 1 || guess > 100) && guess != sentinelVal) {
-//                System.out.println("Your guess is not within the range of 1-100. Please try again: ");
-//                guess = scanner.nextInt();
-//            }
-//            System.out.println("While loop ended.");
-//
-//
-//
-//
-////            if (guess == sentinelVal) {
-////                System.out.println("The program will quit now.");
-////            } else {
-////                numberOfGuesses++;
-////                while ((guess < 1 || guess > 100) && guess != sentinelVal) {
-////                    System.out.println("Your guess is not within the range of 1-100. Please try again: ");
-////                    guess = scanner.nextInt();
-////                    if (guess == sentinelVal) {
-////                        System.out.println("The program will quit now.");
-////                        break; //I know we haven't lectured on breaks yet, and I still wanted to use this here because it seems useful.
-////                    }
-////                }
-////                while (guess != randomNumb && guess != sentinelVal) {
-////
-////                    if (guess > randomNumb) {
-////                        guessIsHigh = true;
-////                    } else {
-////                        guessIsHigh = false;
-////                    }
-////                    System.out.println("Your guess is " + (guessIsHigh ? "high" : "low") + ". Please guess again: ");
-////                    guess = scanner.nextInt();
-////                    numberOfGuesses++;
-////                }
-////                System.out.println("Congratulations you guessed the right number!\nYou guessed " + numberOfGuesses + " times!");
-////            }
-////            System.out.println("Thanks for playing! Would you like to play again? Enter -1 to quit: ");
-////            answer = scanner.nextInt();
-////            toContinue = ((answer > 0)? true : false);
-//        } while (toContinue);
         scanner.close();
 
     }
