@@ -1,0 +1,29 @@
+# Eclipse specific files
+.classpath
+.project
+.settings/
+
+# Compiled Java classes
+bin/
+target/
+
+# Maven
+.mvn/
+!**/src/main/**/.gitkeep
+!**/src/test/**/.gitkeep
+
+# Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# IntelliJ IDEA (if you use both IDEs)
+.idea/
+*.iml
+
+# MacOS system files
+.DS_Store
+
+# Windows system files
+Thumbs.db
+ehthumbs.db
