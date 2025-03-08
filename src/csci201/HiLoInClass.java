@@ -11,8 +11,8 @@ public class HiLoInClass {
         String response;
         do {
             randNum = randGen.nextInt(100) + 1;
+            System.out.println("randNum " + randNum);
             System.out.println("A random number between 1 and 100 is picked.");
-
             do {
                 System.out.println("Enter your guess (out a number outside the range 1-100 to quite): ");
                 guess = scanner.nextInt();
