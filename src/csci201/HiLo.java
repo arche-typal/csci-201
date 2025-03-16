@@ -8,12 +8,13 @@ public class HiLo {
         Random random = new Random();
         int randNum;
         int guess;
-        int numberOfGuesses = 0;
+        int numberOfGuesses;
         int sentinelVal = -1;
         boolean guessIsHigh = false;
         Scanner scanner = new Scanner(System.in);        
 
         do {
+        	numberOfGuesses = 0;
         	randNum = random.nextInt(100) + 1;
             System.out.println("To guess the random number generated, enter a number between 1-100, "
             		+ "or enter -1 to quit: ");
@@ -24,7 +25,7 @@ public class HiLo {
                     System.out.println("Your guess is not within the range of 1-100. Please try again: ");
                     guess = scanner.nextInt();
                 }
-                if ((guess > 1 || guess < 100) && guess != sentinelVal && guess != randNum) {
+                if ((guess >= 1 && guess <= 100) && guess != sentinelVal && guess != randNum) {
                 	numberOfGuesses++;
                     if (guess > randNum) {
                         guessIsHigh = true;
@@ -42,7 +43,7 @@ public class HiLo {
             			+ "!\nThere were " + numberOfGuesses + " attempt(s) before the correct number was guessed.");
             }
             System.out.println("\nThanks for playing!\n\nWould you like to play again?"
-            		+ "\nEnter -1 to fully quit and anything else to keep playing: ");
+            		+ "\nEnter -1 to fully quit and any other number to keep playing: ");
             guess = scanner.nextInt();
             if (guess == sentinelVal) { 
                 System.out.println("\nYou have decided to quit.");
