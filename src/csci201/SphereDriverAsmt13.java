@@ -18,7 +18,7 @@ public class SphereDriverAsmt13 {
 	}
 	
 	public static void welcomeMessage() {
-		System.out.println("Hello, this application alculate the surface area and volume a=of a sphere using the radius you provide.");
+		System.out.println("Hello, this application alculate the surface area and volume of a sphere using the radius you provide.");
 	}
 	
 	public static double getRadius() {
