@@ -2,7 +2,6 @@ package csci201;
 
 import java.util.Scanner;
 
-//Write another class named SphereDriver (or something meaningful) that creates an object of the type Sphere class by providing a radius you get from the user.
 public class SphereDriverAsmt13 {
 	
 	public static void main(String[] args) {
