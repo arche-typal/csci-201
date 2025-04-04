@@ -30,5 +30,6 @@ public class CircleObjectClientInClass {
 		System.out.println("This application calculates the circumference and "
 				+ "area of a circle.");
 	}
+
 	
 }
