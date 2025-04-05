@@ -13,12 +13,12 @@ public class SphereDriverAsmt13 {
 	
 	public static void results(double radius, double surfaceArea, double volume) {
 		System.out.print("\n\nThe surface area of the sphere "
-				+ "\nfor the radius given of " + radius + " is \n" + surfaceArea
-				+ "\nand the volume is \n" + volume + ".");
+				+ "\nfor the radius given of " + radius + " units is \n" + surfaceArea
+				+ " square units\nand the volume is \n" + volume + " cubic units.");
 	}
 	
 	public static void welcomeMessage() {
-		System.out.println("Hello, this application alculate the surface area and volume of a sphere using the radius you provide.");
+		System.out.println("Hello, this application calculates the surface area and volume of a sphere using the radius you provide.");
 	}
 	
 	public static double getRadius() {
