@@ -7,6 +7,23 @@ Create a program that deals five random cards.
 */
 
 public class Card {
-
+	String suit;
+	String face;	
+	
+	String suit() {
+		return this.suit;
+	}
+	
+	public void setSuit(String suit) {
+		this.suit = suit;
+	}
+	
+	String face() {
+		return this.face;
+	}
+	
+	public void setFace(String face) {
+		this.face = face;
+	}
 	
 }

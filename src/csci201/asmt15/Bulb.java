@@ -3,6 +3,13 @@ package csci201.asmt15;
 public class Bulb {
 	public boolean isOn = false;
 	
+	public Bulb() {
+	}
+	
+	public Bulb(boolean isOn) {
+		this.isOn = isOn;
+	}
+	
 	public boolean getLight() {
 		return this.isOn;
 	}
