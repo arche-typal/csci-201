@@ -14,5 +14,4 @@ public class Lights {
 		+ ". The light, bulb2, is " + bulb2.isOnString() 
 		+ ". The light, bulb3, is " + bulb3.isOnString() + ".");
 	}
-
 }
