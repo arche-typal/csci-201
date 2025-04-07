@@ -8,7 +8,7 @@ public class Card {
 	String suit;
 	String face;	
 	
-	String suit() {
+	public String getSuit() {
 		return this.suit;
 	}
 	
@@ -16,7 +16,7 @@ public class Card {
 		this.suit = suit;
 	}
 	
-	String face() {
+	public String getFace() {
 		return this.face;
 	}
 	
@@ -24,22 +24,22 @@ public class Card {
 		this.face = face;
 	}
 	
-	public Card generateRandomCard() {
+	public static Card generateRandomCard() {
 		Card card = new Card();
 		card.setSuit(generateRandomSuit());
 		card.setFace(generateRandomFace());
 		return card;
 	}
 	
-	public String generateRandomFace() {
+	public static String generateRandomFace() {
 		ArrayList<String> faces = new ArrayList<>(Arrays.asList("A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"));
 		Random rand = new Random();
-        return faces.get(rand.nextInt(12));
+        return faces.get(rand.nextInt(faces.size()));
 	}
 	
-	public String generateRandomSuit() {
+	public static String generateRandomSuit() {
 		ArrayList<String> suits = new ArrayList<>(Arrays.asList("Hearts", "Diamonds", "Clubs", "Spades"));
 		Random rand = new Random();
-        return suits.get(rand.nextInt(4));
+        return suits.get(rand.nextInt(suits.size()));
 	}
 }
