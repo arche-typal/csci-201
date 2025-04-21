@@ -6,21 +6,10 @@ public class MeanAndStandardDeviation {
 
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
-		int[] list1 = new int[50];
-		
-		System.out.println("Enter a list of number, up to 50 numbers."
-				+ "\nThis program will compute the mean and standard deviation of the list."
-				+ "\nEnter a non-number to stop adding numbers.");
-		
-		int count = 0;
-		while (count < 50 && scanner.hasNextInt()) {
-			list1[count] = scanner.nextInt();
-			count ++;
-		}
-		
-		double result = mean(list1);
+		int[] list = {12, 22, 13, 4, 5, 6, 7, 8, 9, 10};
+		double result = mean(list);
 		System.out.println("The mean of the list is " + result + ".");
-		double result2 = standardDeviation(list1, result);
+		double result2 = standardDeviation(list, result);
 		System.out.println("The standard deviation of the list is " + result2 + ".");
 		
 	}
