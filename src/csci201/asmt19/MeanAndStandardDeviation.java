@@ -36,15 +36,4 @@ public class MeanAndStandardDeviation {
 		double standardDev = Math.sqrt(added/(numList.length-1));
 		return standardDev;
 	}
-	
-	public static void print(int[] array) {
-		System.out.print("[");
-		for  (int i = 0; i < array.length; i++) {
-			System.out.print(array[i]);
-			if (i != array.length - 1) {
-				System.out.print(", ");
-			}
-		}
-		System.out.println("]");
-	}
 }
