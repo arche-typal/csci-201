@@ -6,7 +6,8 @@ package csci201.asmt19;
 public class StandardDeviationInClass {
 
 	public static void main(String[] args) {
-		int[] list1 = {12, 22, 13, 4, 5, 6, 7, 8, 9, 10};
+		//int[] list1 = {12, 22, 13, 4, 5, 6, 7, 8, 9, 10};
+		int[] list1 = {3, 4, 5, 6};
 		double result = mean(list1);
 		System.out.println("Mean = " + result);
 		double result2 = standardDeviationInClass(list1);
