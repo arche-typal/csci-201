@@ -4,9 +4,7 @@ package csci201.asmt19;
 public class MeanAndStandardDeviation {
 
 	public static void main(String[] args) {
-		//***Enable user to make list
-		//int[] list1 = {1,2,3};
-		int[] list1 = {12, 22, 13, 4, 5, 6, 7, 8, 9, 10};
+		int[] list1 = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 		double result = mean(list1);
 		System.out.println("The mean of the list is " + result + ".");
 		double result2 = standardDeviation(list1, result);
