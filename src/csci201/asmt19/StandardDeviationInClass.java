@@ -1,5 +1,8 @@
 package csci201.asmt19;
 
+//Mean = 9.6
+//Standard Deviation = 5.232377832092956
+
 public class StandardDeviationInClass {
 
 	public static void main(String[] args) {

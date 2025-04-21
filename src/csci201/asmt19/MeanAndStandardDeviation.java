@@ -1,22 +1,16 @@
 package csci201.asmt19;
 
-import java.lang.reflect.Array;
-
-//Design and implement an application that computes and prints the
-//mean and standard deviation of a list of integers xi through x1Z.
-//Assume that there will be no more than 50 input values. Compute
-//both the mean and the standard deviation as floating point values,
-//using the following formulas.
 
 public class MeanAndStandardDeviation {
 
 	public static void main(String[] args) {
 		//***Enable user to make list
-		int[] list1 = {1,2,3};
+		//int[] list1 = {1,2,3};
+		int[] list1 = {12, 22, 13, 4, 5, 6, 7, 8, 9, 10};
 		double result = mean(list1);
-		System.out.println(result);
+		System.out.println("The mean of the list is " + result + ".");
 		double result2 = standardDeviation(list1, result);
-		System.out.println(result2);
+		System.out.println("The standard deviation of the list is " + result2 + ".");
 		
 	}
 	
@@ -32,10 +26,6 @@ public class MeanAndStandardDeviation {
 	}
 	
 	public static double standardDeviation(int[] numList, double mean) {
-		//subtract mean from numbers
-		//then square each number
-		//then add the numbers
-		//then divide by number of numbers
 		
 		double added = 0;
 		for (int i = 0; i <= numList.length-1; i++) {
@@ -45,7 +35,18 @@ public class MeanAndStandardDeviation {
 			added += numSubMeanSquared;
 		}
 		
-		double standardDev = added/numList.length;
+		double standardDev = Math.sqrt(added/(numList.length-1));
 		return standardDev;
+	}
+	
+	public static void print(int[] array) {
+		System.out.print("[");
+		for  (int i = 0; i < array.length; i++) {
+			System.out.print(array[i]);
+			if (i != array.length - 1) {
+				System.out.print(", ");
+			}
+		}
+		System.out.println("]");
 	}
 }
